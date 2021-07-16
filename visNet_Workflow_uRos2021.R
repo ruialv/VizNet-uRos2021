@@ -730,7 +730,7 @@ visOptions(highlightNearest = list(enabled = T, degree = 2, hover = T),
            
            # First combo box "Select by id"
            # Defined by nodesIdSelection can be "values : Optional. Vector of possible values (node's id), 
-           # and so order is preserve. Default to all id in nodes data.frame.        
+           # and so order is preserved. Default to all id in nodes data.frame.        
            
            nodesIdSelection = list(enabled = T, selected = "1"),
            
@@ -775,12 +775,7 @@ visEvents(doubleClick =
 # BarnesHut is the recommended solver for non-hierarchical layout. 
 # The remaining parameters were fine tuned for this particular network.
 
-# visPhysics(maxVelocity = 5,
-#            solver = "barnesHut", 
-#            barnesHut = list(avoidOverlap = 0.15,
-#                             gravitationalConstant = -1500,
-#                             springConstant = 0.01),
-#            repulsion = list(centralGravity = 1.5))
+
 
 visPhysics(maxVelocity = 5,
            solver = "barnesHut",
