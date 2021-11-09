@@ -1,6 +1,6 @@
 # VizNet-uRos2021
 
-Files intended for the uRos 2021 : 9th International Conference Use of R in Official Statistics uRos2021
+Files for the uRos 2021 : 9th International Conference Use of R in Official Statistics uRos2021
 
 Topics: 
 Big data; Dissemination and visualization
