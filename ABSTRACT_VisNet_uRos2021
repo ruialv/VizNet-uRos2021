@@ -1,0 +1,39 @@
+PAPER
+
+
+uRos 2021 : 
+9th International Conference Use of R in Official Statistics uRos2021
+
+Topics: 
+Big data; Dissemination and visualization
+
+Title: 
+Network Visualization of Multi-data Sources using R 
+
+Authors: 
+Rui Alves (Statistics Portugal – INE, Portugal), 
+Shirley Ortega-Azurduy (Statistics Netherlands – CBS, Netherlands),
+Christina Pierrakou (Hellenic Statistical Authority – ELSTAT, Greece)
+
+Keywords: 
+multi-purpose data sources, network, visualization, travel and tourism statistics
+
+
+ABSTRACT
+
+
+The use of multiple data sources in official statistics poses many challenges such as data discrepancies, incoherent concepts, indirect relations between sources and redundancies of information, just to name a few. These issues are far from being trivial and may be easily either overlooked or underestimated. Big data along with administrative data are major data sources that are not produced for the purpose of official statistics and require strong analytical tools. In fact and for a long time, it’s been perceived that their potential has not being fully explored. In this paper, an innovative visualization implemented in R is introduced. The use of the package visNetwork[1] renders a dynamic and comprehensive platform-free network for statistical researchers in the field of official statistics of Travel and Tourism and assists them during the assessment of multi-purpose data sources.
+In the last decade data sources have expanded horizontally (more domains or areas) and vertically (more data for each domain or area) making it increasingly complex to have an up-to-date overview of these sources such that user can manage, search and extract implicit information and their connections. To overcome the aforementioned challenges, there is a need for a proper user-friendly solution to visualize, explore and help to deal with the complexity at hand.
+Network visualization is a valuable and flexible alternative to present a dense and complex set of heavily interconnected data sources, particularly when it comes to interactivity. This visualization was envisioned and developed under the ESSnet programme on Big Data 2018 -2020[2]. Herein; one of the goals was to provide an interactive graphical representation of connections between data sources (multi-purpose data sources, survey data and web scraped data), variables, domains, countries and experimental results.
+
+Our approach was inspired by network analysis which has become an increasingly popular tool to deal with the complexity of interrelationships. The two primary aspects of networks are a multitude of separate entities and the connection between them which are referred to as nodes of a graph (for example, statistical domains or data sources), while the connections are edges or links. The elements of this map of relationships; nodes - which can also be URL’s - and edges, can be graphically displayed with different sizes, lengths, shapes and colours in order to provide a more intuitive and accurate view.
+
+Although there are several applications designed for network analysis, R has grown into a powerful tool for statistical analysis. The strength of R network analysis in comparison to other stand-alone network analysis software is that R enables reproducibility and provides robust tools for data analysis. Moreover, the use of R language is quite common at National Statistic Institutes (NSI) and, therefore, it’s not only faster to produce and disseminate results, but also to share code and use it in current existing workflows. The visNetwork R package allows an interactive visualization of networks, and R’s ability to read and write multiple formats makes it compatible with shiny, R Markdown documents, and RStudio viewer.
+
+The developed R script is “self-contained” in the sense that data are embedded in the code; therefore it recreates data and a visNetwork object. The visualization is displayed on RStudio viewer and exported as a stand-alone HTML file, where interactivity is a key feature. The level of relevancy of a source is imbedded since the nodes with more connections (edges) are automatically placed on the centre. You can also zoom in and out on the plot, move it around and re-centre it. Hoovering a selected node will present additional information and in specific nodes external webpages will be open upon double-click. Moreover, filtering options are available using two combo-boxes. 
+One of the main advantages is the dynamic layout of the VisNetwork. It engages the user into the analysis of multi-purpose data as he/she can interact with the tool by dragging a node as the graph will literally pull all other direct and eventually indirect connected nodes along with it. In this way, the user has a visual “feel” of the importance of choosing a data source or domain (node) in the whole network. The aggregated value of this network is analytical engagement which is otherwise impossible in a static alternative. And it’s also quite fun to play with.
+
+
+
+[1] Thieurmel, B., “visNetwork: a package for network visualization”, release 3.0.8, Augustus 2019. https://github.com/datastorm-open/visNetwork
+[2] [Essnet2018] ESSnet on Big Data 2018 -2020 - Eurostat grant ESTAT-PA11-2018-8 Multipurpose statistics and efficiency gains in production. https://ec.europa.eu/eurostat/cros/essnet-big-data-2_en
